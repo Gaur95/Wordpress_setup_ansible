@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+
+
+   DocumentRoot /var/www/html/wordpress
+   ErrorLog ${APACHE_LOG_DIR}/error.log
+   CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+   <Directory /var/www/html/wordpress>
+        AllowOverride ALL
+   </Directory>
+
+
+</VirtualHost>
